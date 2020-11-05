@@ -1,0 +1,4 @@
+# gitignore: files and directories for git to ignore
+
+# ignore the test directory, for now
+test/
