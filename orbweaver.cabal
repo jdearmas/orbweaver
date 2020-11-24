@@ -22,8 +22,9 @@ library
   -- other-modules:
   -- other-extensions:
   build-depends:
-    base >=4.14 && <4.15,
-    Cabal >=3.2
+                Cabal >=3.2,
+                HTTP >= 4000.3.15,
+                base >=4.14 && <4.15
   -- hs-source-dirs:
   default-language:    Haskell2010
 
@@ -32,9 +33,10 @@ executable orbweaver
   other-modules:       MyLib
   -- other-extensions:
   build-depends:
-    base >=4.14 && <4.15,
-    orbweaver,
-    Cabal >=3.2
+                Cabal >=3.2,
+                HTTP >= 4000.3.15,
+                base >=4.14 && <4.15,
+                orbweaver
   -- hs-source-dirs:
   default-language:    Haskell2010
 
@@ -43,4 +45,5 @@ test-suite orbweaver-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             MyLibTest.hs
-  build-depends:       base >=4.14 && <4.15
+  build-depends:       HTTP >= 4000.3.15,
+                       base >=4.14 && <4.15
